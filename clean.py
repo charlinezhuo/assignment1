@@ -18,7 +18,9 @@ def clean_data(input1, input2, output):
 
     # 保存清洗后的数据
     merged_df.to_csv(output, index=False)
-
+    # Print the shape of the output file
+    output_shape = merged_df.shape
+    print("Output file shape:", output_shape)
 
 if __name__ == "__main__":
     # 创建解析器对象
